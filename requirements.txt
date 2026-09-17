@@ -1,0 +1,8 @@
+networkx>=3.2
+sentence-transformers>=2.7
+transformers>=4.40
+torch>=2.2
+numpy>=1.26
+matplotlib>=3.8
+gradio>=4.30
+pytest>=8.0
