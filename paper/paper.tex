@@ -1,18 +1,27 @@
-\documentclass[10pt,twocolumn]{article}
+\documentclass[11pt]{article}
 
-\usepackage[margin=0.85in]{geometry}
+\usepackage[margin=1.1in]{geometry}
 \usepackage{times}
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{natbib}
+\usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{authblk}
+\usepackage{setspace}
+\usepackage{microtype}
 \usepackage[T1]{fontenc}
 
-\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+\definecolor{linkblue}{RGB}{0,60,140}
+\hypersetup{colorlinks=true, linkcolor=linkblue, citecolor=linkblue, urlcolor=linkblue}
 
-\title{\textbf{Retrieval Succeeds, Reasoning Fails: Disentangling Bottlenecks \\ in Multi-Hop Knowledge Graph Question Answering with Small Language Models}}
+\setstretch{1.15}
+\setlength{\parskip}{0.4em}
+\setlength{\parindent}{0pt}
+\setlength{\bibsep}{0.5em}
+
+\title{\textbf{Retrieval Succeeds, Reasoning Fails:} \\[0.4em] \textbf{Disentangling Bottlenecks in Multi-Hop Knowledge Graph \\ Question Answering with Small Language Models}}
 
 \author[1]{Ilahi M. Taofiq\thanks{Corresponding email: taofiqmds24@gmail.com}}
 \affil[1]{Independent Research}
@@ -91,7 +100,7 @@ The knowledge graph and question set are generated with a fixed random seed (0),
 
 Table~\ref{tab:accuracy} reports answer accuracy by ground-truth hop count, and Figure~\ref{fig:accuracy} visualizes the same data. Table~\ref{tab:retrieval} reports retrieval precision and recall for the same configurations.
 
-\begin{table}[t]
+\begin{table}[htbp]
 \centering
 \small
 \begin{tabular}{lccc}
@@ -108,14 +117,14 @@ Agentic GraphRAG       & 100.0\% & \textbf{74.1\%} & 9.1\% \\
 \label{tab:accuracy}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{accuracy_by_hop.pdf}
+\includegraphics[width=0.8\linewidth]{accuracy_by_hop.pdf}
 \caption{Answer accuracy by ground-truth hop count (same data as Table~\ref{tab:accuracy}). Agentic GraphRAG's advantage is concentrated entirely at 2 hops; all three systems converge at 1 and 3 hops, for different reasons (Section~\ref{sec:results}).}
 \label{fig:accuracy}
 \end{figure}
 
-\begin{table}[t]
+\begin{table}[htbp]
 \centering
 \small
 \begin{tabular}{lccc}
@@ -179,44 +188,44 @@ We presented a controlled study isolating retrieval quality from answer accuracy
 \begin{thebibliography}{9}
 
 \bibitem[Chung et al.(2022)]{chung2022flant5}
-Hyung Won Chung, Le Hou, Shayne Longpre, et al.
+Hyung Won Chung, Le Hou, et al.
 \newblock Scaling Instruction-Finetuned Language Models.
-\newblock \emph{arXiv preprint}, 2022.
+\newblock \emph{arXiv preprint arXiv:2210.11416}, 2022.
 
 \bibitem[Edge et al.(2024)]{edge2024graphrag}
-Darren Edge, Ha Trinh, Newman Cheng, et al.
+Darren Edge, Ha Trinh, Newman Cheng, Joshua Bradley, Alex Chao, Apurva Mody, Steven Truitt, Jonathan Larson, et al.
 \newblock From Local to Global: A Graph RAG Approach to Query-Focused Summarization.
-\newblock \emph{arXiv preprint}, 2024.
+\newblock \emph{arXiv preprint arXiv:2404.16130}, 2024.
 
 \bibitem[Lewis et al.(2020)]{lewis2020rag}
-Patrick Lewis, Ethan Perez, Aleksandra Piktus, et al.
+Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich K{\"u}ttler, Mike Lewis, Wen-tau Yih, Tim Rockt{\"a}schel, Sebastian Riedel, and Douwe Kiela.
 \newblock Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.
-\newblock \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2020.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2020.
 
 \bibitem[Reimers and Gurevych(2019)]{reimers2019sbert}
 Nils Reimers and Iryna Gurevych.
 \newblock Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks.
-\newblock \emph{Proceedings of EMNLP-IJCNLP}, 2019.
+\newblock In \emph{Proceedings of EMNLP-IJCNLP}, pages 3982--3992, 2019.
 
 \bibitem[Wei et al.(2022)]{wei2022cot}
-Jason Wei, Xuezhi Wang, Dale Schuurmans, et al.
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc V. Le, and Denny Zhou.
 \newblock Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.
-\newblock \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2022.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2022.
 
 \bibitem[Yang et al.(2018)]{yang2018hotpotqa}
-Zhilin Yang, Peng Qi, Saizheng Zhang, et al.
+Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan Salakhutdinov, and Christopher D. Manning.
 \newblock HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering.
-\newblock \emph{Proceedings of EMNLP}, 2018.
+\newblock In \emph{Proceedings of EMNLP}, 2018.
 
 \bibitem[Yao et al.(2023)]{yao2023react}
-Shunyu Yao, Jeffrey Zhao, Dian Yu, et al.
+Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao.
 \newblock ReAct: Synergizing Reasoning and Acting in Language Models.
-\newblock \emph{International Conference on Learning Representations (ICLR)}, 2023.
+\newblock In \emph{International Conference on Learning Representations (ICLR)}, 2023. arXiv:2210.03629.
 
 \bibitem[Zhang et al.(2018)]{zhang2018metaqa}
-Yuyu Zhang, Hanjun Dai, Zornitsa Kozareva, et al.
+Yuyu Zhang, Hanjun Dai, Zornitsa Kozareva, Alexander J. Smola, and Le Song.
 \newblock Variational Reasoning for Question Answering with Knowledge Graph.
-\newblock \emph{Proceedings of AAAI}, 2018.
+\newblock In \emph{Proceedings of AAAI}, 2018.
 
 \end{thebibliography}
 

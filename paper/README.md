@@ -2,11 +2,11 @@
 
 **Retrieval Succeeds, Reasoning Fails: Disentangling Bottlenecks in Multi-Hop Knowledge Graph Question Answering with Small Language Models**
 
-A short paper based on this repository's benchmark results, written up in standard two-column academic format. [Read the compiled PDF](paper.pdf).
+A 9-page paper (single-column, 11pt) based on this repository's benchmark results. [Read the compiled PDF](paper.pdf).
 
 ## Before you submit or share this anywhere
 
-- **Verify every citation.** The reference list (Lewis et al. 2020 on RAG, Edge et al. 2024 on GraphRAG, Zhang et al. 2018 on MetaQA, Yang et al. 2018 on HotpotQA, Yao et al. 2023 on ReAct, Wei et al. 2022 on chain-of-thought, Chung et al. 2022 on FLAN-T5, Reimers & Gurevych 2019 on Sentence-BERT) is written from best recollection of well-known papers. The titles, authors, and venues should be correct, but double-check each one on Google Scholar or Semantic Scholar before submitting anywhere - citation accuracy matters and this was not verified against a live database.
+- **Citations were checked, but re-check before submitting.** All 8 references (Lewis et al. 2020 on RAG, Edge et al. 2024 on GraphRAG, Zhang et al. 2018 on MetaQA, Yang et al. 2018 on HotpotQA, Yao et al. 2023 on ReAct, Wei et al. 2022 on chain-of-thought, Chung et al. 2022 on FLAN-T5, Reimers & Gurevych 2019 on Sentence-BERT) were verified against arXiv, the ACL Anthology, or the NeurIPS/AAAI/ICLR proceedings for title, authors, venue, and year. Author lists for the two arXiv-only papers with many authors (Edge et al., Chung et al.) are truncated with "et al." Spot-check them yourself against Google Scholar before submitting anywhere.
 - **This is a preprint-quality writeup, not a peer-reviewed result.** It's honest, it's based on real experiments with real numbers (nothing in it is fabricated), and it's well-suited for a portfolio, a Master's application writing sample, or an arXiv preprint. It has not been through peer review and should not be described as "published in" any venue unless it actually goes through one.
 
 ## If you want to post it on arXiv
