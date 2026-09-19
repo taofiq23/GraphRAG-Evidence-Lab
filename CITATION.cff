@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the accompanying paper."
+title: "GraphRAG Evidence Lab"
+authors:
+  - family-names: Taofiq
+    given-names: "Ilahi M."
+license: MIT
+repository-code: "https://github.com/taofiq23/GraphRAG-Evidence-Lab"
+preferred-citation:
+  type: generic
+  title: "Retrieval Succeeds, Reasoning Fails: Disentangling Bottlenecks in Multi-Hop Knowledge Graph Question Answering with Small Language Models"
+  authors:
+    - family-names: Taofiq
+      given-names: "Ilahi M."
+  year: 2026
+  version: "2.0"
+  doi: "10.5281/zenodo.22848733"
+  publisher:
+    name: Zenodo
+  notes: "Preprint"

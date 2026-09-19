@@ -4,12 +4,14 @@
 
 A 9-page paper (single-column, 11pt) based on this repository's benchmark results. [Read the compiled PDF](paper.pdf).
 
-## Before you submit or share this anywhere
+**Published as a preprint on Zenodo** (CC BY 4.0, Version 2.0): [doi.org/10.5281/zenodo.22848733](https://doi.org/10.5281/zenodo.22848733)
 
-- **Citations were checked, but re-check before submitting.** All 8 references (Lewis et al. 2020 on RAG, Edge et al. 2024 on GraphRAG, Zhang et al. 2018 on MetaQA, Yang et al. 2018 on HotpotQA, Yao et al. 2023 on ReAct, Wei et al. 2022 on chain-of-thought, Chung et al. 2022 on FLAN-T5, Reimers & Gurevych 2019 on Sentence-BERT) were verified against arXiv, the ACL Anthology, or the NeurIPS/AAAI/ICLR proceedings for title, authors, venue, and year. Author lists for the two arXiv-only papers with many authors (Edge et al., Chung et al.) are truncated with "et al." Spot-check them yourself against Google Scholar before submitting anywhere.
-- **This is a preprint-quality writeup, not a peer-reviewed result.** It's honest, it's based on real experiments with real numbers (nothing in it is fabricated), and it's well-suited for a portfolio, a Master's application writing sample, or an arXiv preprint. It has not been through peer review and should not be described as "published in" any venue unless it actually goes through one.
+## Notes on citing and sharing
 
-## If you want to post it on arXiv
+- **Citations were checked, but re-check before reusing.** All 8 references (Lewis et al. 2020 on RAG, Edge et al. 2024 on GraphRAG, Zhang et al. 2018 on MetaQA, Yang et al. 2018 on HotpotQA, Yao et al. 2023 on ReAct, Wei et al. 2022 on chain-of-thought, Chung et al. 2022 on FLAN-T5, Reimers & Gurevych 2019 on Sentence-BERT) were verified against arXiv, the ACL Anthology, or the NeurIPS/AAAI/ICLR proceedings for title, authors, venue, and year. Author lists for the two arXiv-only papers with many authors (Edge et al., Chung et al.) are truncated with "et al." Spot-check them yourself against Google Scholar before submitting anywhere.
+- **This is a preprint-quality writeup, not a peer-reviewed result.** It's based on real experiments with real numbers, and it has a permanent DOI via Zenodo, but it has not been through peer review and should be described as a "preprint on Zenodo", not as "published in" a journal or conference.
+
+## Optional: also post it on arXiv
 
 1. First-time submitters typically need an **endorsement** from an existing arXiv author in the target category (likely `cs.CL` or `cs.AI`) - check [arxiv.org/help/endorsement](https://arxiv.org/help/endorsement) for the current process. This is a real hurdle that isn't automatic.
 2. Upload `paper.tex`, `accuracy_by_hop.pdf`, and the bibliography (already inline in this version - no separate `.bib` file needed) as a single submission.

@@ -1,5 +1,7 @@
 # GraphRAG Evidence Lab
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22848733-blue)](https://doi.org/10.5281/zenodo.22848733)
+
 Knowledge-graph retrieval, vector retrieval, and agentic AI evaluation, compared head-to-head on the same question set. A small knowledge graph (people, companies, products, cities) backs three retrieval strategies - **vector RAG** (embedding similarity, the common baseline), **fixed 1-hop GraphRAG**, and **agentic GraphRAG** (the agent decides for itself, via its own LLM self-assessment, how many hops of graph traversal it needs) - each feeding a small local LLM that generates the final answer.
 
 Because the knowledge graph and its QA pairs are generated together, every question carries a known gold answer *and* the exact gold supporting facts, which is what makes the retrieval quality actually measurable rather than eyeballed.
@@ -7,6 +9,14 @@ Because the knowledge graph and its QA pairs are generated together, every quest
 ## The core question this benchmarks
 
 Does graph-based retrieval actually help more than plain vector similarity on multi-hop questions - and if it does, does that translate into better final answers, or does the bottleneck just move somewhere else? Both turned out to be true, in that order, which is the interesting part of the result below.
+
+## Paper
+
+This benchmark is written up as a preprint, *Retrieval Succeeds, Reasoning Fails: Disentangling Bottlenecks in Multi-Hop Knowledge Graph Question Answering with Small Language Models*, available on Zenodo: [doi.org/10.5281/zenodo.22848733](https://doi.org/10.5281/zenodo.22848733). The LaTeX source and compiled PDF are in [`paper/`](paper/). It has not been peer reviewed.
+
+To cite:
+
+> Ilahi M. Taofiq. (2026). *Retrieval Succeeds, Reasoning Fails: Disentangling Bottlenecks in Multi-Hop Knowledge Graph Question Answering with Small Language Models* (Version 2.0). Zenodo. https://doi.org/10.5281/zenodo.22848733
 
 ## Benchmark results
 
